@@ -1,0 +1,25 @@
+<!--
+  This template loads for the 'tab.cam' state (app.js)
+-->
+<ion-view title="List">
+   <div class="bar bar-header bar-royal">
+  <h1 class="title">Lists</h1>
+</div>
+
+    <ion-content has-bouncing=true>
+
+      <div class="list top-buffer">
+
+        <a ng-repeat="item in items" 
+           href="#/{{item.id}}"
+           class="item item-thumbnail-left">
+
+          <img ng-src="{{ item.image }}">
+          <h2>{{ item.album }}</h2>
+          <h4>{{ item.artist }}</h4>
+        </a>
+
+      </div>
+
+    </ion-content>
+</ion-view>

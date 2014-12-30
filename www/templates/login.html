@@ -1,0 +1,31 @@
+
+<ion-view>
+<div class="bar bar-header bar-royal">
+  <h1 class="title">login</h1>
+</div>
+  <ion-content has-bouncing=true>
+   <div >
+    <form name="loginForm" ng-submit="authenticate(loginForm.$valid)" novalidate>
+     <div class="list top-buffer">
+       <p class="error" ng-show="invalid">{{message}}</p>
+      <p class="error " ng-show="(loginForm.username.$invalid || loginForm.username.$pristine) && submitted ">Username is Required</p>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Username</span>
+          <input name="username" placeholder="Username" type="text" ng-model="myForm.username" required>
+      </label>
+      <p class="error" ng-show="(loginForm.password.$invalid || loginForm.password.$pristine) && submitted ">Password is Required</p>
+      <label class="item item-input item-floating-label">
+          <span class="input-label">Password</span>
+          <input name="password" placeholder="Password" type="password" ng-model="myForm.password" required>
+      </label>
+    </div>
+    <div class="align-upload">
+      <button type="submit"  class="button button-large">SUBMIT</button>
+    </div>
+    </form>
+    <button id="left-buffer" class="button button-large" ng-click="navigateTo('newpass')" >
+      Forgot Password
+   </button>
+  </div>
+  </ion-content>
+</ion-view>

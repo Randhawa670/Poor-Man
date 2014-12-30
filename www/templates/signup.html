@@ -1,0 +1,39 @@
+<ion-view >
+
+<div class="bar bar-header bar-royal">
+  <h1 class="title">Register</h1>
+</div>
+<ion-content has-bouncing=true>
+
+   <div >
+    <form name="registerForm" ng-submit="register(registerForm.$valid)" novalidate>
+     <div class="list top-buffer">
+       <p class="error" ng-show="invalid">{{message}}</p>
+       <p class="error" ng-show="(registerForm.name.$invalid || registerForm.name.$pristine) && submitted ">*Name is Required</p>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Name</span>
+          <input name="name" placeholder="Name" type="text" ng-model="rgForm.name" required>
+      </label>
+      <p class="error " ng-show="(registerForm.address.$invalid || registerForm.address.$pristine) && submitted ">Address is Required</p>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Address</span>
+          <input name="address" placeholder="Address" type="text" ng-model="rgForm.address" required>
+      </label>
+      <p class="error " ng-show="(registerForm.username.$invalid || registerForm.username.$pristine) && submitted ">Username is Required</p>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Username</span>
+          <input name="username" placeholder="Username" type="text" ng-model="rgForm.username" required>
+      </label>
+      <p class="error" ng-show="(registerForm.password.$invalid || registerForm.password.$pristine) && submitted ">Password is Required</p>
+      <label class="item item-input item-floating-label">
+          <span class="input-label">Password</span>
+          <input name="password" placeholder="Password" type="password" ng-model="rgForm.password" required>
+      </label>
+    </div>
+    <div class="align-upload">
+      <button type="submit"  class="button button-large">SUBMIT</button>
+    </div>
+    </form>
+  </div>
+  </ion-content>
+</ion-view>

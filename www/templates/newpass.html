@@ -1,0 +1,40 @@
+<ion-view >
+
+<div class="bar bar-header bar-royal">
+  <h1 class="title">Chnage Password</h1>
+</div>
+<ion-scroll>
+   <div >
+    <form name="newpassForm" ng-submit="change(newpassForm.$valid)" novalidate>
+     <div class="list top-buffer">
+       <p class="error" ng-show="invalid">{{message}}</p>
+      <p class="error " ng-show="(newpassForm.username.$invalid || newpassForm.username.$pristine) && submitted ">Username is Required</p>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Username</span>
+          <input name="username" placeholder="Username" type="text" ng-model="rgForm.username" required>
+      </label>
+      <p class="error" ng-show="(newpassForm.oldpassword.$invalid || newpassForm.oldpassword.$pristine) && submitted ">Old Password is Required</p>
+      <label class="item item-input item-floating-label">
+          <span class="input-label">Old Password</span>
+          <input name="oldpassword" placeholder="Old Password" type="password" ng-model="rgForm.oldpassword" required>
+      </label>
+    <p class="error" ng-show="(newpassForm.newpassword.$invalid || newpassForm.newpassword.$pristine) && submitted ">New Password is Required</p>
+      <label class="item item-input item-floating-label">
+          <span class="input-label">New Password</span>
+          <input name="newpassword" placeholder="New Password" type="password" ng-model="rgForm.newpassword" required>
+      </label>
+    <p class="error" ng-show="(newpassForm.cpassword.$invalid || newpassForm.cpassword.$pristine) && submitted ">Password is Required</p>
+    <p class="error" ng-show="(rgForm.newpassword != rgForm.cpassword ) && submitted">Password do not match..</p>
+      <label class="item item-input item-floating-label">
+          <span class="input-label">Confirm Password</span>
+          <input name="cpassword" placeholder="Confirm Password" type="password" ng-model="rgForm.cpassword" 
+          data-match="rgForm.newpassword" required>
+      </label>
+    </div>
+    <div class="align-upload">
+      <button type="submit"  class="button button-large">SUBMIT</button>
+    </div>
+    </form>
+  </div>
+  </ion-scroll>
+</ion-view>

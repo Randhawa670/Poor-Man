@@ -1,0 +1,174 @@
+/* Empty. Add your own CSS if you like */
+
+
+.top-buffer { margin-top:45px; }
+.top-buffer-prev { margin-top:18%; }
+.top-buffer-detail { margin-top:15%; }
+.align-upload {text-align: center;}
+
+#left-buffer{ margin-left:9%; }
+.generic-background{
+
+background: #383a4c;
+
+
+}
+.gap{
+
+	margin-top:40px; 
+}
+.error{
+
+color: red;
+
+	
+}
+#canvas1{
+
+height: 350px;
+
+}
+.slogan {
+		font-size: 18px;
+		color: #ffffff;
+		position: relative;
+		z-index:2;
+		text-align: center;
+		margin-top: 10%;
+		margin-bottom: 10%;
+	}
+
+	
+
+	.button {
+		width: 88%;
+		height:56px;
+		margin:10px auto;
+		position:relative;
+		padding:0;
+		text-transform: uppercase;
+		font-size:18px;
+		letter-spacing: 0.5px;
+		z-index:2;
+		margin-top: 1%;
+		margin-left:6%;
+		
+
+	}
+
+/*for grid*/
+body {
+  cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+
+/** For the task list header columns and tasks **/
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: none;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.wrap    {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 320px) {
+
+    .flex-container.wrap > div{
+        width: 50%;
+        max-width: 50%;
+        text-overflow: '';
+        white-space:nowrap;
+        overflow: hidden;
+    }
+
+}
+
+@media (min-width: 321px) {
+    .flex-container.wrap > div{
+        width: 33%;
+        max-width: 33%;
+        text-overflow: '';
+        white-space:nowrap;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 480px) {
+    .flex-container.wrap > div{
+        width: 25%;
+        max-width: 25%;
+        text-overflow: '';
+        white-space:nowrap;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 640px) {
+    .flex-container.wrap > div{
+        width: 20%;
+        max-width: 20%;
+        text-overflow: '';
+        white-space:nowrap;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 960px) {
+    .flex-container.wrap > div{
+        width: 15%;
+        max-width: 15%;
+        text-overflow: '';
+        white-space:nowrap;
+        overflow: hidden;
+    }
+}
+
+.low-pad-item {
+    padding: 0;
+    margin: 0;
+}
+
+.col-header {
+    font-weight: bold;
+}
+
+.column {
+    text-overflow: '';
+    white-space:nowrap;
+    overflow: hidden;
+    max-width: 87%;
+    float: left;
+    padding: 2px 5px;
+}
+
+.col-header > .column {
+    padding: 5px 5px;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.column-sort {
+    min-width:13%;
+    float: right;
+    text-align: right;
+    padding-right: 2px;
+}
+
+
+
+
+
+	
+
